@@ -1,0 +1,24 @@
+<div class="container">
+    <h1>Form Pendaftaran GDG Aceh</h1>
+
+   <div class="form-group">
+   	<label>Nama</label>
+   	<input type="text" class="form-control" name="nama" ng-model="anggota.nama">
+   </div>
+
+     <div class="form-group">
+   	<label>Alamat</label>
+   	<input type="text" class="form-control" name="alamat" ng-model="anggota.alamat">
+   </div>
+
+     <div class="form-group">
+   	<label>Nomor HP</label>
+   	<input type="text" class="form-control" name="nomorHp" ng-model="anggota.nomorHp">
+   </div>
+
+     <div class="form-group">
+   	<label>Foto</label>
+   	<input type="file" accept="jpg" class="form-control" id="file">
+   </div>
+
+    <button class="btn-block btn-primary" ng-click="ubah(anggota.nama, anggota.alamat, anggota.nomorHp)">Simpan</button>
